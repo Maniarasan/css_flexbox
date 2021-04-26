@@ -1,0 +1,211 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+
+    <style type="text/css">
+      body {
+        font-family: helvetica;
+        background-color: rgb(241, 241, 241);
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        flex-shrink: row;
+        width: 100%;
+        height: 100%;
+      }
+
+      .card {
+        background-image: linear-gradient(rgb(14, 49, 116), rgb(230, 203, 227));
+        margin: 5%;
+        display: flex;
+        width: 15%;
+        height: 40%;
+        background-color: white;
+        color: rgb(252, 252, 252);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-shrink: row;
+        padding: 1%;
+      }
+
+      .card > div {
+        flex-direction: column;
+      }
+
+      .card > p {
+        margin: 0px;
+        color: white;
+      }
+      .card > div > h2 {
+        color: rgb(255, 255, 255);
+      }
+
+      @media only screen and (max-width: 600px) {
+        .flex-container {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-direction: column;
+        }
+        .tabs {
+          width: 100%;
+        }
+      }
+
+      .column,
+      .tabs {
+        margin: 5%;
+        flex-direction: column;
+      }
+      .nav-bar {
+        background-color: #ffffff;
+        width: 10%;
+      }
+
+      .profile-image {
+        width: 10%;
+        text-align: center;
+        padding: 2%;
+      }
+      .menu {
+        width: 90%;
+        background-color: #ffffff;
+      }
+      .menu-bar {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .star {
+        color: rgb(255, 255, 255);
+      }
+
+      .checked {
+        color: rgb(245, 127, 219);
+      }
+
+      .content {
+        width: 90%;
+        background-image: linear-gradient(
+          rgb(77, 132, 233),
+          rgb(255, 183, 247)
+        );
+      }
+
+      .card-list {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+
+  <div class="flex-container">
+    <div class="nav-bar">
+      <div class="tabs">
+        <h1>Tenacity</h1>
+        <h4>Tab 1</h4>
+        <h4>Tab 1</h4>
+        <h4>Tab 1</h4>
+        <h4>Tab 1</h4>
+      </div>
+    </div>
+
+    <div class="content">
+      <div style="height: 10%" class="menu-bar">
+        <h4 style="padding: 10px">Home</h4>
+        <h4 style="padding: 10px">Services</h4>
+        <h4 style="padding: 10px">About Us</h4>
+
+        <div style="text-align: right" class="profile-image">
+          <i class="fas fa-3x fa-user"></i>
+        </div>
+      </div>
+
+      <div class="card-list">
+        <div class="card">
+          <div>
+            <h2>
+              <span style="padding-right: 5px">
+                <i class="fas fa-1x fa-user"></i></span
+              >Andrew
+            </h2>
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p style="margin-bottom: 0px">Software Engineer</p>
+            <p style="margin: 0px; font-size: small">
+              ABC, Bay area, Silicon Valley
+            </p>
+
+            <div
+              style="
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                font-size: smaller;
+                padding-bottom: 1px;
+              "
+            >
+              <ul style="padding: 1px; list-style-type: none">
+                <li style="padding: 5px">Angular</li>
+                <li style="padding: 5px">CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <h2>
+              <span style="padding-right: 5px">
+                <i class="fas fa-1x fa-user"></i></span
+              >Andrew
+            </h2>
+            <div class="star">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p style="margin-bottom: 0px">Software Engineer</p>
+            <p style="margin: 0px; font-size: small">
+              ABC, Bay area, Silicon Valley
+            </p>
+
+            <div
+              style="
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                font-size: smaller;
+                padding-bottom: 1px;
+              "
+            >
+              <ul style="padding: 1px; list-style-type: none">
+                <li style="padding: 5px">Angular</li>
+                <li style="padding: 5px">CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
